@@ -13,15 +13,16 @@ class InitialScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: Container(
         child: Column(
           children: <Widget>[
             SizedBox(
-              height: 250,
+              height: Get.height / 3.5,
             ),
             Image.asset(Images.logo),
             SizedBox(
-              height: 150,
+              height: Get.height / 6,
             ),
             CustomButton(
                 title: register,
